@@ -39,3 +39,18 @@ model = AutoModelForCausalLM.from_pretrained(
 
 Hugging Face dataset containing all prompts and model outputs:
 https://huggingface.co/datasets/faiziiiiii/smollm3-blindspots-10
+
+
+
+
+
+## Key Findings
+
+The base model demonstrates:
+
+- Occasional arithmetic inaccuracies
+- Difficulty complying with strict output constraints
+- Overconfident hallucinations instead of calibrated abstention
+- Inconsistent JSON formatting under instruction pressure
+
+These behaviors suggest limitations in instruction-following training and uncertainty calibration.
